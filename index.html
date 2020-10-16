@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>Assignment </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
+    <style media="screen">
+      body{
+        background: url(tree.webp) no-repeat center center fixed;
+        background-size: contain;
+        margin: 50px;
+
+      }
+      .text{
+      font-family: 'Chilanka', cursive;
+      color: red;
+      text-align: center;
+      }
+    button{
+      background-color: #CCEEFF ;
+      border-color: red orange yellow green;
+      width:200px;
+      position: absolute;
+      top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+      border-radius: 50px;
+      padding:10px;
+      text-decoration-color: white;
+      align-items: center;
+
+    }
+    span::before {
+        content: "CSS";
+        animation: animate infinite 3s;
+        padding-left: 10px;
+    }
+
+    @keyframes animate {
+
+        0% {
+            content: "CSS";
+        }
+
+        50% {
+            content: "HTML";
+        }
+
+        75% {
+            content: "JS";
+        }
+    }
+    button:hover{
+      background-color: #00FF00 ;
+      border-style: dashed;
+      -webkit-appearance: inherit;
+      width:50%;
+      height: 50px;
+      border-radius: 50px;
+      padding:10px;
+
+    }
+
+    </style>
+  </head>
+  <body >
+    <h1 class="text">CSS button animated</h1>
+    <button type="button" name="button" >BUTTON for <span></span></button>
+  </body>
+</html>
